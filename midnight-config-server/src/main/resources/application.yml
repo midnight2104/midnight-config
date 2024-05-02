@@ -1,0 +1,36 @@
+server:
+    port: 9129
+    servlet:
+        context-path: /
+
+spring:
+    application:
+        name: midnight-config-server
+#    datasource:
+#        driver-class-name: com.mysql.cj.jdbc.Driver
+#        url: jdbc:mysql://localhost:3306/kkconfig?useUnicode=true&characterEncoding=UTF-8
+#        username: root
+#        password:
+    datasource:
+        driver-class-name: org.h2.Driver
+        url: jdbc:h2:file:./h2db
+        username: root
+        password: 123456
+
+    sql:
+        init:
+            schema-locations: classpath:db.sql
+            mode: always
+
+    h2:
+        console:
+            path: /h2
+            enabled: true
+            settings:
+                web-allow-others: true
+
+mybatis:
+    #  mapper-locations: classpath:mapper/**.xml
+    configuration:
+        log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+        default-statement-timeout: 5000
