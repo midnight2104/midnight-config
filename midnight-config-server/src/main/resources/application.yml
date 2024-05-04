@@ -6,11 +6,6 @@ server:
 spring:
     application:
         name: midnight-config-server
-#    datasource:
-#        driver-class-name: com.mysql.cj.jdbc.Driver
-#        url: jdbc:mysql://localhost:3306/kkconfig?useUnicode=true&characterEncoding=UTF-8
-#        username: root
-#        password:
     datasource:
         driver-class-name: org.h2.Driver
         url: jdbc:h2:file:./h2db

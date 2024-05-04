@@ -1,0 +1,10 @@
+midnight:
+    a: a00
+    b: b00
+    c: c00
+
+spring:
+    application:
+        name: midnight-config-demo
+server:
+    port: 8888

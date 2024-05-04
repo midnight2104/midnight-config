@@ -17,6 +17,7 @@ public class MidnightConfigController {
 
     @Autowired
     ConfigsMapper configsMapper;
+    Map<String, Long> VERSIONS = new HashMap<>();
 
 
     Map<String, Long> lastTimestampMap = new HashMap<>();
@@ -62,4 +63,8 @@ public class MidnightConfigController {
         }
     }
 
+    @GetMapping("/version")
+    public long version(String app, String env, String ns) {
+        return VERSIONS.getOrDefault(app + "-" + env + "-" + ns, -1L);
+    }
 }

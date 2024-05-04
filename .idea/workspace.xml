@@ -4,11 +4,55 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e38969a9-d656-4f36-bea4-5998fbeba2d4" name="Changes" comment="" />
+    <list default="true" id="e38969a9-d656-4f36-bea4-5998fbeba2d4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/annotation/EnableMidnightConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/config/MidnightConfigService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/config/MidnightConfigServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/config/MidnightPropertySource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/config/MidnightRegistrar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/config/PropertySourcesProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/midnight-config-client/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/midnight-config-demo/src/main/java/com/midnight/config/demo/MidnightDemoConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/midnight-config-demo/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midnight-config-client/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/midnight-config-client/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/midnight-config-client/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/midnight-config-client/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/midnight-config-client/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/midnight-config-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/midnight-config-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/MidnightConfigClientApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/midnight-config-client/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/midnight-config-client/src/test/java/com/midnight/config/client/MidnightConfigClientApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/midnight-config-demo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/midnight-config-demo/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/midnight-config-demo/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/midnight-config-demo/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/midnight-config-demo/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/midnight-config-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/midnight-config-demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midnight-config-demo/src/main/java/com/midnight/config/demo/MidnightConfigDemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/midnight-config-demo/src/main/java/com/midnight/config/demo/MidnightConfigDemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midnight-config-demo/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/midnight-config-server/src/main/java/com/midnight/config/server/MidnightConfigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/midnight-config-server/src/main/java/com/midnight/config/server/MidnightConfigController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midnight-config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/midnight-config-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midnight-config-server/src/main/resources/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/midnight-config-server/src/main/resources/db.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -35,18 +79,24 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="azul-17" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/midnight-config-server/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/midnight-config-client/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.5212922" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\course\midnight-config\midnight-config-client\src\main\resources" />
+      <recent name="D:\course\midnight-config\midnight-config-demo\src\main\resources" />
       <recent name="D:\course\midnight-config\midnight-config-server\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -59,9 +109,23 @@
     <option name="myCommands">
       <command value="mvn clean" />
       <command value="mvn install" />
+      <command value="mvn clean install" />
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.MidnightConfigServerApplication">
+    <configuration name="MidnightConfigDemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.midnight.config.demo.MidnightConfigDemoApplication" />
+      <module name="midnight-config-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.midnight.config.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MidnightConfigClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="midnight-config-client" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.midnight.config.client.MidnightConfigClientApplication" />
@@ -83,6 +147,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MidnightConfigDemoApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -94,10 +163,22 @@
       <updated>1714635447079</updated>
       <workItem from="1714635448925" duration="2582000" />
       <workItem from="1714640676140" duration="241000" />
+      <workItem from="1714820961060" duration="3930000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
