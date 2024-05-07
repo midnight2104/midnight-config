@@ -25,12 +25,7 @@ public class MidnightConfigController {
 
     @GetMapping("/list")
     public List<Configs> list(String app, String ns, String env) {
-        String key = app + "_" + ns + "_" + env;
-        if (lastConfigMap.containsKey(key)) return lastConfigMap.get(key);
-        List<Configs> configs = configsMapper.selectAll(app, ns, env);
-        lastConfigMap.put(key, configs);
-        System.out.println(" =====>>>> current configs: " + configs);
-        return configs;
+        return configsMapper.selectAll(app, ns, env);
     }
 
     @PostMapping("/update")
@@ -39,6 +34,8 @@ public class MidnightConfigController {
         JSONObject jsonObject = JSONObject.parseObject(json);
         insertOrUpdateAll(convertJSON2Configs(app, ns, env, jsonObject));
         List<Configs> configsList = configsMapper.selectAll(app, ns, env);
+
+        VERSIONS.put(app + "-" + env + "-" + ns, System.currentTimeMillis());
 
         return configsList;
     }

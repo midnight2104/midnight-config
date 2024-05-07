@@ -1,0 +1,4 @@
+com\midnight\config\server\MidnightConfigController.class
+com\midnight\config\server\MidnightConfigServerApplication.class
+com\midnight\config\server\model\Configs.class
+com\midnight\config\server\mapper\ConfigsMapper.class

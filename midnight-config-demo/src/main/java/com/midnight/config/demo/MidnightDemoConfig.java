@@ -7,4 +7,5 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties(prefix = "midnight")
 public class MidnightDemoConfig {
     private String a;
+    private String b;
 }

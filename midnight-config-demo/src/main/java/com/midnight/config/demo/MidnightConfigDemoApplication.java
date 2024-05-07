@@ -10,6 +10,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.env.Environment;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Arrays;
 
@@ -17,29 +19,38 @@ import java.util.Arrays;
 @SpringBootApplication
 @EnableConfigurationProperties({MidnightDemoConfig.class})
 @EnableMidnightConfig
+@RestController
 public class MidnightConfigDemoApplication {
-
     @Value("${midnight.a}")
     private String a;
+
+    @Value("${midnight.b}")
+    private String b;
 
     @Autowired
     private MidnightDemoConfig demoConfig;
 
     @Autowired
-    private Environment env;
+    Environment environment;
 
     public static void main(String[] args) {
         SpringApplication.run(MidnightConfigDemoApplication.class, args);
     }
 
+    @GetMapping("/demo")
+    public String demo() {
+        return "midnight.a = " + a + "\n"
+                + "midnight.b = " + b + "\n"
+                + "demoConfig.a = " + demoConfig.getA() + "\n"
+                + "demoConfig.b = " + demoConfig.getB() + "\n";
+    }
 
     @Bean
-    public ApplicationRunner runner() {
-        log.info("====> activeProfiles" + Arrays.toString(env.getActiveProfiles()));
-
+    ApplicationRunner applicationRunner() {
+        System.out.println(Arrays.toString(environment.getActiveProfiles()));
         return args -> {
-            log.info("====> midnight.a = " + a);
-            log.info("====> demoConfig.a = " + demoConfig.getA());
+            System.out.println(a);
+            System.out.println(demoConfig.getA());
         };
     }
 }
