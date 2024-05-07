@@ -4,6 +4,8 @@ import lombok.Data;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.EnvironmentAware;
 import org.springframework.core.Ordered;
 import org.springframework.core.PriorityOrdered;
@@ -11,18 +13,16 @@ import org.springframework.core.env.CompositePropertySource;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.core.env.Environment;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * 自定义属性处理器
  */
 @Data
-public class PropertySourcesProcessor implements BeanFactoryPostProcessor, EnvironmentAware, PriorityOrdered {
+public class PropertySourcesProcessor implements BeanFactoryPostProcessor, ApplicationContextAware, EnvironmentAware, PriorityOrdered {
     private final static String MID_PROPERTY_SOURCES = "MidPropertySources";
     private final static String MID_PROPERTY_SOURCE = "KKPropertySource";
 
     private Environment environment;
+    private ApplicationContext applicationContext;
 
     @Override
     public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
@@ -32,15 +32,17 @@ public class PropertySourcesProcessor implements BeanFactoryPostProcessor, Envir
             return;
         }
 
-        // todo 通过http请求到 config-server 获取配置
-        Map<String, String> config = new HashMap<>();
-        config.put("midnight.a", "dev500");
-        config.put("midnight.b", "b600");
-        config.put("midnight.c", "c700");
+        // 通过http请求到 config-server 获取配置
+        String _app = env.getProperty("midnightconfig.app", "app1");
+        String _env = env.getProperty("midnightconfig.env", "dev");
+        String _ns = env.getProperty("midnightconfig.ns", "public");
+        String _configServer = env.getProperty("midnightconfig.configServer", "http://localhost:9129");
 
-        MidnightConfigService configService = new MidnightConfigServiceImpl(config);
-        MidnightPropertySource propertySource = new MidnightPropertySource(MID_PROPERTY_SOURCE, configService);
+        ConfigMeta configMeta = new ConfigMeta(_app, _env, _ns, _configServer);
+        MidnightConfigService configService = MidnightConfigService.getDefault(applicationContext, configMeta);
+
         // CompositePropertySource可以加载多个属性源
+        MidnightPropertySource propertySource = new MidnightPropertySource(MID_PROPERTY_SOURCE, configService);
         CompositePropertySource composite = new CompositePropertySource(MID_PROPERTY_SOURCES);
         composite.addPropertySource(propertySource);
 
