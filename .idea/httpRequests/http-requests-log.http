@@ -1,0 +1,430 @@
+GET http://localhost:8888/demo
+Accept: application/json
+
+<> 2024-05-10T203544.200.json
+
+###
+
+POST http://localhost:9129/update?app=app1&env=dev&ns=public
+Content-Type: application/json
+
+{
+  "midnight.a": "dev666",
+  "midnight.b": "bbb666"
+}
+
+<> 2024-05-10T203541.200.json
+
+###
+
+GET http://localhost:8888/demo
+Accept: application/json
+
+<> 2024-05-10T203504.200.json
+
+###
+
+POST http://localhost:9129/update?app=app1&env=dev&ns=public
+Content-Type: application/json
+
+{
+  "midnight.a": "dev666",
+  "midnight.b": "bbb666"
+}
+
+<> 2024-05-10T203439.200.json
+
+###
+
+GET http://localhost:8888/demo
+Accept: application/json
+
+<> 2024-05-10T203411.200.json
+
+###
+
+POST http://localhost:9129/update?app=app1&env=dev&ns=public
+Content-Type: application/json
+
+{
+  "midnight.a": "dev666",
+  "midnight.b": "bbb666"
+}
+
+<> 2024-05-10T203142.200.json
+
+###
+
+GET http://localhost:8888/demo
+Accept: application/json
+
+<> 2024-05-10T202403.200.json
+
+###
+
+GET http://localhost:8888/demo
+Accept: application/json
+
+<> 2024-05-10T202359.200.json
+
+###
+
+GET http://localhost:9129/list?app=app1&env=dev&ns=public
+Accept: application/json
+
+<> 2024-05-10T202352.200.json
+
+###
+
+GET http://localhost:8888/demo
+Accept: application/json
+
+<> 2024-05-10T202342.200.json
+
+###
+
+GET http://localhost:8888/demo
+Accept: application/json
+
+<> 2024-05-10T202310.200.json
+
+###
+
+POST http://localhost:9129/update?app=app1&env=dev&ns=public
+Content-Type: application/json
+
+{
+  "midnight.a": "dev666",
+  "midnight.b": "bbb666"
+}
+
+<> 2024-05-10T202257.200.json
+
+###
+
+GET http://localhost:8888/demo
+Accept: application/json
+
+<> 2024-05-10T202114.200.json
+
+###
+
+POST http://localhost:9129/update?app=app1&env=dev&ns=public
+Content-Type: application/json
+
+{
+  "midnight.a": "dev666",
+  "midnight.b": "bbb666"
+}
+
+<> 2024-05-10T202111.200.json
+
+###
+
+POST http://localhost:9129/update?app=app1&env=dev&ns=public
+Content-Type: application/json
+
+{
+  "midnight.a": "dev666",
+  "midnight.b": "bbb666"
+}
+
+<> 2024-05-10T202052.200.json
+
+###
+
+GET http://localhost:8888/demo
+Accept: application/json
+
+<> 2024-05-10T202021.200.json
+
+###
+
+POST http://localhost:9129/update?app=app1&env=dev&ns=public
+Content-Type: application/json
+
+{
+  "midnight.a": "dev666",
+  "midnight.b": "bbb666"
+}
+
+<> 2024-05-10T202014.200.json
+
+###
+
+GET http://localhost:8888/demo
+Accept: application/json
+
+<> 2024-05-10T201945.200.json
+
+###
+
+POST http://localhost:9129/update?app=app1&env=dev&ns=public
+Content-Type: application/json
+
+{
+  "midnight.a": "dev666",
+  "midnight.b": "bbb666"
+}
+
+<> 2024-05-10T201924.200.json
+
+###
+
+GET http://localhost:8888/demo
+Accept: application/json
+
+<> 2024-05-07T184405.200.json
+
+###
+
+POST http://localhost:9129/update?app=app1&env=dev&ns=public
+Content-Type: application/json
+
+{
+  "midnight.a": "dev666",
+  "midnight.b": "bbb666"
+}
+
+<> 2024-05-07T184116.200.json
+
+###
+
+GET http://localhost:8888/demo
+Accept: application/json
+
+<> 2024-05-07T182131.200.json
+
+###
+
+POST http://localhost:9129/update?app=app1&env=dev&ns=public
+Content-Type: application/json
+
+{
+  "midnight.a": "dev123",
+  "midnight.b": "bbb456"
+}
+
+<> 2024-05-07T182127.200.json
+
+###
+
+GET http://localhost:8888/demo
+Accept: application/json
+
+<> 2024-05-07T182109.200.json
+
+###
+
+GET http://localhost:9129/list?app=app1&env=dev&ns=public
+Accept: application/json
+
+<> 2024-05-07T182052.200.json
+
+###
+
+POST http://localhost:9129/update?app=app1&env=dev&ns=public
+Content-Type: application/json
+
+{
+  "midnight.a": "dev123",
+  "midnight.b": "b456"
+}
+
+<> 2024-05-06T213317.200.json
+
+###
+
+GET http://localhost:8888/demo
+Accept: application/json
+
+<> 2024-05-06T213300.200.json
+
+###
+
+GET http://localhost:9129/list?app=app1&env=dev&ns=public
+Accept: application/json
+
+<> 2024-05-06T213201.200.json
+
+###
+
+GET http://localhost:8888/demo
+Accept: application/json
+
+<> 2024-05-06T213101.200.json
+
+###
+
+GET http://localhost:8888/demo
+Accept: application/json
+
+<> 2024-05-06T213058.200.json
+
+###
+
+GET http://localhost:8888/demo
+Accept: application/json
+
+<> 2024-05-06T213043.200.json
+
+###
+
+POST http://localhost:9129/update?app=app1&env=dev&ns=public
+Content-Type: application/json
+
+{
+  "midnight.a": "dev8888888888",
+  "midnight.b": "bbbbbbbbbbb"
+}
+
+<> 2024-05-06T213037.200.json
+
+###
+
+GET http://localhost:8888/demo
+Accept: application/json
+
+<> 2024-05-06T212337.200.json
+
+###
+
+GET http://localhost:8888/demo
+Accept: application/json
+
+<> 2024-05-06T212332.200.json
+
+###
+
+POST http://localhost:9129/update?app=app1&env=dev&ns=public
+Content-Type: application/json
+
+{
+  "midnight.a": "dev8888888888",
+  "midnight.b": "bbbbbbbbbbb"
+}
+
+<> 2024-05-06T212322.200.json
+
+###
+
+GET http://localhost:8888/demo
+Accept: application/json
+
+<> 2024-05-06T212242.200.json
+
+###
+
+GET http://localhost:8888/demo
+Accept: application/json
+
+<> 2024-05-06T212118.200.json
+
+###
+
+POST http://localhost:9129/update?app=app1&env=dev&ns=public
+Content-Type: application/json
+
+{
+  "midnight.a": "dev789",
+  "midnight.b": "aaaa"
+}
+
+<> 2024-05-06T212028.200.json
+
+###
+
+POST http://localhost:9129/update?app=app1&env=dev&ns=public
+Content-Type: application/json
+
+{
+  "kk.a": "dev789",
+  "kk.b": "aaaa"
+}
+
+<> 2024-05-06T211641.200.json
+
+###
+
+POST http://localhost:9129/update?app=app1&env=dev&ns=public
+Content-Type: application/json
+
+{
+  "app": "app1",
+  "ns": "public",
+  "env": "dev",
+  "pkey": "kk.a",
+  "pval": "dev8999"
+}
+
+<> 2024-05-06T211633.200.json
+
+###
+
+POST http://localhost:9129/update?app=app1&env=dev&ns=public
+Content-Type: application/json
+
+{
+  "app": "app1",
+  "ns": "public",
+  "env": "dev",
+  "pkey": "kk.a",
+  "pval": "dev890"
+}
+
+<> 2024-05-06T211514.200.json
+
+###
+
+POST http://localhost:9129/update?app=app1&env=dev&ns=public
+Content-Type: application/json
+
+{
+  "app": "app1",
+  "ns": "public",
+  "env": "dev",
+  "pkey": "kk.a",
+  "pval": "dev4444"
+}
+
+<> 2024-05-06T211106.200.json
+
+###
+
+POST http://localhost:9129/list?app=app1&env=dev&ns=public
+Content-Type: application/json
+
+{
+  "app": "app1",
+  "ns": "public",
+  "env": "dev",
+  "pkey": "kk.a",
+  "pval": "dev4444"
+}
+
+<> 2024-05-06T211055-1.405.json
+
+###
+
+POST http://localhost:9129/list?app=app1&env=dev&ns=public
+Content-Type: application/json
+
+{
+  "app": "app1",
+  "ns": "public",
+  "env": "dev",
+  "pkey": "kk.a",
+  "pval": "dev4444"
+}
+
+<> 2024-05-06T211055.405.json
+
+###
+
+GET http://localhost:9129/list?app=app1&env=dev&ns=public
+Accept: application/json
+
+<> 2024-05-06T210917.200.json
+
+###
+

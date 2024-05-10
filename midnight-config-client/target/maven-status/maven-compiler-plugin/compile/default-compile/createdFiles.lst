@@ -1,0 +1,17 @@
+com\midnight\config\client\util\HttpUtils$HttpInvoker.class
+com\midnight\config\client\config\MidnightPropertySource.class
+com\midnight\config\client\repository\MidnightRepositoryChangeListener.class
+com\midnight\config\client\repository\MidnightRepositoryImpl$1.class
+com\midnight\config\client\repository\MidnightRepositoryImpl$2.class
+com\midnight\config\client\repository\MidnightRepositoryImpl.class
+com\midnight\config\client\config\MidnightRegistrar.class
+com\midnight\config\client\repository\MidnightRepositoryChangeListener$ChangeEvent.class
+com\midnight\config\client\repository\MidnightRepository.class
+com\midnight\config\client\config\PropertySourcesProcessor.class
+com\midnight\config\client\util\HttpUtils$OkHttpInvoker.class
+com\midnight\config\client\util\HttpUtils.class
+com\midnight\config\client\repository\Configs.class
+com\midnight\config\client\config\ConfigMeta.class
+com\midnight\config\client\annotation\EnableMidnightConfig.class
+com\midnight\config\client\config\MidnightConfigService.class
+com\midnight\config\client\config\MidnightConfigServiceImpl.class

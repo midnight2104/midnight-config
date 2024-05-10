@@ -1,0 +1,23 @@
+[
+  {
+    "app": "app1",
+    "ns": "public",
+    "env": "dev",
+    "pkey": "midnight.a",
+    "pval": "dev123"
+  },
+  {
+    "app": "app1",
+    "ns": "public",
+    "env": "dev",
+    "pkey": "midnight.b",
+    "pval": "b456"
+  },
+  {
+    "app": "app1",
+    "ns": "public",
+    "env": "dev",
+    "pkey": "midnight.c",
+    "pval": "1000"
+  }
+]

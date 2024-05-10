@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e38969a9-d656-4f36-bea4-5998fbeba2d4" name="Changes" comment="实现config-client, @ConfigurationProperties 动态更新">
-      <change afterPath="$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/value/FieldUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/value/SpringValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/value/SpringValueProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/h2db.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/h2db.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/config/MidnightRegistrar.java" beforeDir="false" afterPath="$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/config/MidnightRegistrar.java" afterDir="false" />
-    </list>
+    <list default="true" id="e38969a9-d656-4f36-bea4-5998fbeba2d4" name="Changes" comment="实现config-client,@Value热更新" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +57,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="azul-17" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/midnight-config-server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/midnight-config-client/doc" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -77,6 +70,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\course\midnight-config\midnight-config-client\doc" />
       <recent name="D:\course\midnight-config\midnight-config-server" />
       <recent name="D:\course\midnight-config\midnight-config-client\src\main\resources" />
       <recent name="D:\course\midnight-config\midnight-config-demo\src\main\resources" />

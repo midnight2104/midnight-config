@@ -1,0 +1,72 @@
+[
+  {
+    "app": "app1",
+    "ns": "public",
+    "env": "dev",
+    "pkey": "kk.a",
+    "pval": "dev789"
+  },
+  {
+    "app": "app1",
+    "ns": "public",
+    "env": "dev",
+    "pkey": "kk.b",
+    "pval": "aaaa"
+  },
+  {
+    "app": "app1",
+    "ns": "public",
+    "env": "dev",
+    "pkey": "kk.c",
+    "pval": "1000"
+  },
+  {
+    "app": "app1",
+    "ns": "public",
+    "env": "dev",
+    "pkey": "app",
+    "pval": "app1"
+  },
+  {
+    "app": "app1",
+    "ns": "public",
+    "env": "dev",
+    "pkey": "ns",
+    "pval": "public"
+  },
+  {
+    "app": "app1",
+    "ns": "public",
+    "env": "dev",
+    "pkey": "pval",
+    "pval": "dev8999"
+  },
+  {
+    "app": "app1",
+    "ns": "public",
+    "env": "dev",
+    "pkey": "pkey",
+    "pval": "kk.a"
+  },
+  {
+    "app": "app1",
+    "ns": "public",
+    "env": "dev",
+    "pkey": "env",
+    "pval": "dev"
+  },
+  {
+    "app": "app1",
+    "ns": "public",
+    "env": "dev",
+    "pkey": "midnight.a",
+    "pval": "dev789"
+  },
+  {
+    "app": "app1",
+    "ns": "public",
+    "env": "dev",
+    "pkey": "midnight.b",
+    "pval": "aaaa"
+  }
+]

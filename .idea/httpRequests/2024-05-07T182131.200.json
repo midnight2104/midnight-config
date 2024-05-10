@@ -1,0 +1,4 @@
+midnight.a = dev100
+midnight.b = http://localhost:8100
+demoConfig.a = dev123
+demoConfig.b = bbb456

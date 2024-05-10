@@ -1,0 +1,58 @@
+[
+  {
+    "app": "app1",
+    "ns": "public",
+    "env": "dev",
+    "pkey": "kk.a",
+    "pval": "dev100"
+  },
+  {
+    "app": "app1",
+    "ns": "public",
+    "env": "dev",
+    "pkey": "kk.b",
+    "pval": "http://localhost:8100"
+  },
+  {
+    "app": "app1",
+    "ns": "public",
+    "env": "dev",
+    "pkey": "kk.c",
+    "pval": "1000"
+  },
+  {
+    "app": "app1",
+    "ns": "public",
+    "env": "dev",
+    "pkey": "app",
+    "pval": "app1"
+  },
+  {
+    "app": "app1",
+    "ns": "public",
+    "env": "dev",
+    "pkey": "ns",
+    "pval": "public"
+  },
+  {
+    "app": "app1",
+    "ns": "public",
+    "env": "dev",
+    "pkey": "pval",
+    "pval": "dev890"
+  },
+  {
+    "app": "app1",
+    "ns": "public",
+    "env": "dev",
+    "pkey": "pkey",
+    "pval": "kk.a"
+  },
+  {
+    "app": "app1",
+    "ns": "public",
+    "env": "dev",
+    "pkey": "env",
+    "pval": "dev"
+  }
+]

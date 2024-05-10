@@ -1,0 +1,23 @@
+[
+  {
+    "app": "app1",
+    "ns": "public",
+    "env": "dev",
+    "pkey": "kk.a",
+    "pval": "dev100"
+  },
+  {
+    "app": "app1",
+    "ns": "public",
+    "env": "dev",
+    "pkey": "kk.b",
+    "pval": "http://localhost:8100"
+  },
+  {
+    "app": "app1",
+    "ns": "public",
+    "env": "dev",
+    "pkey": "kk.c",
+    "pval": "1000"
+  }
+]
