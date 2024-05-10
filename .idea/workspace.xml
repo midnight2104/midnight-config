@@ -4,29 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e38969a9-d656-4f36-bea4-5998fbeba2d4" name="Changes" comment="实现config-client">
-      <change afterPath="$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/config/ConfigMeta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/repository/Configs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/repository/MidnightRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/repository/MidnightRepositoryChangeListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/repository/MidnightRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/util/HttpUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midnight-config-server/config-server.http" afterDir="false" />
+    <list default="true" id="e38969a9-d656-4f36-bea4-5998fbeba2d4" name="Changes" comment="实现config-client, @ConfigurationProperties 动态更新">
+      <change afterPath="$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/value/FieldUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/value/SpringValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/value/SpringValueProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/h2db.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/h2db.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midnight-config-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/midnight-config-client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/config/MidnightConfigService.java" beforeDir="false" afterPath="$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/config/MidnightConfigService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/config/MidnightConfigServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/config/MidnightConfigServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/config/PropertySourcesProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/config/PropertySourcesProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midnight-config-demo/src/main/java/com/midnight/config/demo/MidnightConfigDemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/midnight-config-demo/src/main/java/com/midnight/config/demo/MidnightConfigDemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midnight-config-demo/src/main/java/com/midnight/config/demo/MidnightDemoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/midnight-config-demo/src/main/java/com/midnight/config/demo/MidnightDemoConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midnight-config-demo/src/test/java/com/midnight/config/demo/MidnightConfigDemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/midnight-config-demo/src/test/java/com/midnight/config/demo/MidnightConfigDemoApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midnight-config-server/src/main/java/com/midnight/config/server/MidnightConfigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/midnight-config-server/src/main/java/com/midnight/config/server/MidnightConfigController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midnight-config-server/src/main/resources/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/midnight-config-server/src/main/resources/db.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midnight-config-server/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/midnight-config-server/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midnight-config-server/target/classes/com/midnight/config/server/MidnightConfigController.class" beforeDir="false" afterPath="$PROJECT_DIR$/midnight-config-server/target/classes/com/midnight/config/server/MidnightConfigController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midnight-config-server/target/classes/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/midnight-config-server/target/classes/db.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midnight-config-server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/midnight-config-server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/config/MidnightRegistrar.java" beforeDir="false" afterPath="$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/config/MidnightRegistrar.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -99,6 +83,7 @@
       <recent name="D:\course\midnight-config\midnight-config-server\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.midnight.config.client.util" />
       <recent name="com.midnight.config.client.repository" />
       <recent name="com.midnight.config.server" />
       <recent name="com.midnight.config.server.model" />
@@ -214,33 +199,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/repository/MidnightRepositoryImpl.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/repository/MidnightRepositoryImpl.java</url>
           <line>76</line>
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/config/MidnightConfigServiceImpl.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/repository/MidnightRepositoryImpl.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/config/MidnightConfigServiceImpl.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/config/MidnightConfigServiceImpl.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/repository/MidnightRepositoryImpl.java</url>
@@ -251,9 +211,24 @@
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/config/MidnightConfigServiceImpl.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="16" />
+          <url>file://$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/value/SpringValueProcessor.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/value/SpringValueProcessor.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/value/SpringValueProcessor.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/midnight-config-client/src/main/java/com/midnight/config/client/value/SpringValueProcessor.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
