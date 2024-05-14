@@ -1,6 +1,7 @@
 package com.midnight.config.server;
 
 import com.alibaba.fastjson.JSONObject;
+import com.midnight.config.server.lock.DistributedLocks;
 import com.midnight.config.server.mapper.ConfigsMapper;
 import com.midnight.config.server.model.Configs;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,8 @@ import java.util.stream.Collectors;
 
 @RestController
 public class MidnightConfigController {
+    @Autowired
+    DistributedLocks locks;
 
     @Autowired
     ConfigsMapper configsMapper;
@@ -64,4 +67,10 @@ public class MidnightConfigController {
     public long version(String app, String env, String ns) {
         return VERSIONS.getOrDefault(app + "-" + env + "-" + ns, -1L);
     }
+
+    @GetMapping("/status")
+    public boolean status() {
+        return locks.getLocked().get();
+    }
+
 }
