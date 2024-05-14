@@ -15,3 +15,8 @@ Accept: application/json
 ###
 GET http://localhost:8888/demo
 Accept: application/json
+
+
+###
+GET http://localhost:9130/status
+Accept: application/json

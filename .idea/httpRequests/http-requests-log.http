@@ -1,3 +1,24 @@
+GET http://localhost:9130/status
+Accept: application/json
+
+<> 2024-05-14T201820.200.json
+
+###
+
+GET http://localhost:9129/status
+Accept: application/json
+
+<> 2024-05-14T201736.200.json
+
+###
+
+GET http://localhost:9130/status
+Accept: application/json
+
+<> 2024-05-14T201713.200.json
+
+###
+
 GET http://localhost:8888/demo
 Accept: application/json
 
